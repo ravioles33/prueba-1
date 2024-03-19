@@ -20,15 +20,3 @@ class ProductoDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Producto.objects.all()
     serializer_class = ProductoSerializer
 
-
-# Función de vista para medir el tiempo de respuesta
-@REQUEST_TIME.time()
-def my_view(request):
-    # Lógica de tu vista
-    time.sleep(1)  # Simula algún trabajo que tome tiempo
-    return HttpResponse("OK")
-
-from prometheus_client import generate_latest
-
-def metrics(request):
-    return HttpResponse(generate_latest(), content_type="text/plain")

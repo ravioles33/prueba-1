@@ -1,0 +1,13 @@
+asgiref==3.7.2
+autopep8==2.1.0
+Django==5.0.3
+django-debug-toolbar==4.3.0
+django-filter==24.1
+django-silk==5.1.0
+djangorestframework==3.14.0
+gprof2dot==2022.7.29
+Markdown==3.6
+prometheus_client==0.20.0
+pycodestyle==2.11.1
+pytz==2024.1
+sqlparse==0.4.4
